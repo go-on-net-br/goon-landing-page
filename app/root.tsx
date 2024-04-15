@@ -4,9 +4,14 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react'
+import type { LinksFunction } from '@remix-run/node'
+import stylesheet from './tailwind.css?url'
 
-export default function App() {
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: stylesheet },
+]
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -16,10 +21,20 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        {children}
         <ScrollRestoration />
         <Scripts />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />{' '}
       </body>
     </html>
-  );
+  )
+}
+
+export default function App() {
+  return <Outlet />
 }
