@@ -22,25 +22,25 @@ export default function Index() {
   };
 
   return (
-    <main className="relative h-full before:absolute before:top-0 before:z-0 before:block before:h-full before:w-full before:bg-[url('/bg.webp')] before:bg-cover before:bg-center before:bg-no-repeat before:blur-sm before:content-[''] after:absolute after:top-0 after:z-[1] after:h-full after:w-full after:bg-[#003ef9ad] after:content-['']">
+    <main className="relative min-h-screen h-full before:absolute before:top-0 before:z-0 before:block before:min-h-screen before:h-full before:w-full before:bg-[url('/bg.webp')] before:bg-cover before:bg-center before:bg-no-repeat before:blur-sm before:content-[''] after:absolute after:top-0 after:z-[1] after:h-full after:min-h-screen after:w-full after:bg-[#003ef9ad] after:content-['']">
       <div className="max-w-7xl  container relative z-[2] py-12 mx-auto blur-none">
         <header className="flex items-center justify-between px-6">
-          <img src={Logo} alt="logotipo da GoOn" className="h-auto w-52" />
-          <div className="flex gap-8">
+          <img src={Logo} alt="logotipo da GoOn" className="h-auto w-32 md:w-52" />
+          <div className="flex gap-4 md:gap-8">
             {Object.entries(socialNetworks).map(([key, val]) => {
               return (
                 <a href={val.href} key={key}>
                   <img
                     src={val.src}
                     alt={`logotipo de ${key}`}
-                    className="h-[36px] w-[36px]"
+                    className=" h-7 w-7 md:h-9 md:w-9"
                   />
                 </a>
               );
             })}
           </div>
         </header>
-        <div className="w-4/6 mx-auto mt-20 ">
+        <div className="w-full md:w-[740px] px-5 md:mx-auto mt-12 md:mt-20 ">
           <div className="relative  h-0 w-full pb-[56.25%]">
             <iframe
               src="https://www.youtube.com/embed/tjI6QEYCwN0?si=Oux2f79V_JpKdGj_"
@@ -52,7 +52,7 @@ export default function Index() {
             ></iframe>
           </div>
         </div>
-        <div className=" w-full text-center text-3xl uppercase text-white">
+        <div className=" w-full text-center text-2xl md:text-3xl uppercase text-white">
           <h1 className="mt-14">
             Sua <b>nova distribuidora</b> de
             <br />
