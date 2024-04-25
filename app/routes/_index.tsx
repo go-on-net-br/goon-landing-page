@@ -25,7 +25,11 @@ export default function Index() {
     <main className="relative min-h-screen h-full before:absolute before:top-0 before:z-0 before:block before:min-h-screen before:h-full before:w-full before:bg-[url('/bg.webp')] before:bg-cover before:bg-center before:bg-no-repeat before:blur-sm before:content-[''] after:absolute after:top-0 after:z-[1] after:h-full after:min-h-screen after:w-full after:bg-[#003ef9ad] after:content-['']">
       <div className="max-w-7xl  container relative z-[2] py-12 mx-auto blur-none">
         <header className="flex items-center justify-between px-6">
-          <img src={Logo} alt="logotipo da GoOn" className="h-auto w-32 md:w-52" />
+          <img
+            src={Logo}
+            alt="logotipo da GoOn"
+            className="h-auto w-32 md:w-52"
+          />
           <div className="flex gap-4 md:gap-8">
             {Object.entries(socialNetworks).map(([key, val]) => {
               return (
@@ -76,7 +80,8 @@ export default function Index() {
               className="font-light italic "
               href="mailto&#58;c%6Fm&#101;%72c&#105;&#97;l&#64;g%6Fo&#110;%&#50;E&#110;et&#46;br"
             >
-              <b className="font-medium not-italic">Comercial</b>{" "}
+              <b className="font-medium not-italic">Comercial </b>
+              <br className="md:hidden" />
               &#99;o&#109;er&#99;&#105;&#97;&#108;&#64;goon&#46;ne&#116;&#46;br
             </a>
             <br />
@@ -84,7 +89,9 @@ export default function Index() {
               className="font-light italic"
               href="&#109;&#97;ilto&#58;ma%72%6B%65&#116;&#105;ng&#64;g&#111;o&#110;&#46;n&#101;t&#46;%62&#37;7&#50;"
             >
-              <b className="font-medium not-italic">Marketing e Imprensa</b>
+              <br className="md:hidden" />
+              <b className="font-medium not-italic">Marketing e Imprensa </b>
+              <br className="md:hidden" />
               ma&#114;ketin&#103;&#64;goon&#46;&#110;et&#46;br
             </a>
           </div>
