@@ -25,15 +25,11 @@ export default function Index() {
     <main className="relative min-h-screen h-full before:absolute before:top-0 before:z-0 before:block before:min-h-screen before:h-full before:w-full before:bg-[url('/bg.webp')] before:bg-cover before:bg-center before:bg-no-repeat before:blur-sm before:content-[''] after:absolute after:top-0 after:z-[1] after:h-full after:min-h-screen after:w-full after:bg-[#003ef9ad] after:content-['']">
       <div className="max-w-7xl  container relative z-[2] py-12 mx-auto blur-none">
         <header className="flex flex-col md:gap-3 gap-10 md:flex-row items-center justify-between px-6">
-          <img
-            src={Logo}
-            alt="logotipo da GoOn"
-            className="h-auto w-52"
-          />
+          <img src={Logo} alt="logotipo da GoOn" className="h-auto w-52" />
           <div className="flex gap-4 md:gap-8">
             {Object.entries(socialNetworks).map(([key, val]) => {
               return (
-                <a href={val.href} key={key}>
+                <a href={val.href} target="_blank" rel="noreferrer" key={key}>
                   <img
                     src={val.src}
                     alt={`logotipo de ${key}`}
@@ -68,6 +64,8 @@ export default function Index() {
           </p>
           <div className="w-full">
             <a
+              target="_blank"
+              rel="noreferrer"
               href="m&#97;&#105;lto&#58;cont%&#54;1t&#111;%&#52;0&#103;%6&#70;on&#46;net%2Ebr"
               className="mt-12 mx-auto w-fit block font-light lowercase"
             >
@@ -77,6 +75,8 @@ export default function Index() {
 
           <div className="mt-16 text-lg normal-case ">
             <a
+              target="_blank"
+              rel="noreferrer"
               className="font-light italic "
               href="mailto&#58;c%6Fm&#101;%72c&#105;&#97;l&#64;g%6Fo&#110;%&#50;E&#110;et&#46;br"
             >
@@ -87,6 +87,8 @@ export default function Index() {
             <br />
             <a
               className="font-light italic"
+              target="_blank"
+              rel="noreferrer"
               href="&#109;&#97;ilto&#58;ma%72%6B%65&#116;&#105;ng&#64;g&#111;o&#110;&#46;n&#101;t&#46;%62&#37;7&#50;"
             >
               <br className="md:hidden" />
