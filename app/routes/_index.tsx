@@ -10,15 +10,35 @@ export const meta: MetaFunction = () => {
   return [
     { title: "Go On -  Sua Nova Distribuidora de Áudio, Vídeo e Automação" },
     { name: "Go On", content: "Distribuidora de Áudio, Vídeo e Automação" },
+    {
+      property: "og:image",
+      content: "https://goon.net.br/logo.png",
+    },
+    {
+      property: "twitter:image",
+      content: "https://goon.net.br/logo.png",
+    },
   ];
 };
 
 export default function Index() {
   const socialNetworks = {
-    facebook: { href: "", src: FacebookLogo },
-    youtube: { href: "", src: YoutubeLogo },
-    instagram: { href: "", src: InstagramLogo },
-    linkedin: { href: "", src: LinkedinLogo },
+    facebook: {
+      href: "https://www.facebook.com/goonautomacao",
+      src: FacebookLogo,
+    },
+    youtube: {
+      href: "https://www.youtube.com/channel/UCt-5PLtA0-4VWYrDajETigQ",
+      src: YoutubeLogo,
+    },
+    instagram: {
+      href: "https://www.instagram.com/goonbrasil_/",
+      src: InstagramLogo,
+    },
+    linkedin: {
+      href: "https://www.linkedin.com/company/goonbrasil/",
+      src: LinkedinLogo,
+    },
   };
 
   return (
@@ -43,7 +63,7 @@ export default function Index() {
         <div className="w-full md:w-[740px] px-5 md:mx-auto mt-12 md:mt-20 ">
           <div className="relative  h-0 w-full pb-[56.25%]">
             <iframe
-              src="https://www.youtube.com/embed/tjI6QEYCwN0?si=Oux2f79V_JpKdGj_"
+              src="https://www.youtube.com/embed/HQaMWP77ImQ?si=VdN7a283gyhion3y"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -58,10 +78,16 @@ export default function Index() {
             <br />
             áudio, vídeo e automação
           </h1>
-          <p className="mt-12">
-            Entre em{" "}
-            <b className="underline decoration-4 underline-offset-8">contato</b>
-          </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="m&#97;&#105;lto&#58;cont%&#54;1t&#111;%&#52;0&#103;%6&#70;on&#46;net%2Ebr"
+            className="mx-auto w-fit block"
+          >
+            <p className="mt-12 underline decoration-4 underline-offset-8 font-bold">
+              Entre em contato
+            </p>
+          </a>
           <div className="w-full">
             <a
               target="_blank"
