@@ -24,11 +24,11 @@ export default function Index() {
   return (
     <main className="relative min-h-screen h-full before:absolute before:top-0 before:z-0 before:block before:min-h-screen before:h-full before:w-full before:bg-[url('/bg.webp')] before:bg-cover before:bg-center before:bg-no-repeat before:blur-sm before:content-[''] after:absolute after:top-0 after:z-[1] after:h-full after:min-h-screen after:w-full after:bg-[#003ef9ad] after:content-['']">
       <div className="max-w-7xl  container relative z-[2] py-12 mx-auto blur-none">
-        <header className="flex items-center justify-between px-6">
+        <header className="flex flex-col md:gap-3 gap-10 md:flex-row items-center justify-between px-6">
           <img
             src={Logo}
             alt="logotipo da GoOn"
-            className="h-auto w-32 md:w-52"
+            className="h-auto w-52"
           />
           <div className="flex gap-4 md:gap-8">
             {Object.entries(socialNetworks).map(([key, val]) => {
@@ -58,7 +58,7 @@ export default function Index() {
         </div>
         <div className=" w-full text-center text-2xl md:text-3xl uppercase text-white">
           <h1 className="mt-14">
-            Sua <b>nova distribuidora</b> de
+            Sua <b>nova marca</b> de
             <br />
             áudio, vídeo e automação
           </h1>
@@ -69,7 +69,7 @@ export default function Index() {
           <div className="w-full">
             <a
               href="m&#97;&#105;lto&#58;cont%&#54;1t&#111;%&#52;0&#103;%6&#70;on&#46;net%2Ebr"
-              className="mt-20 mx-auto w-fit block font-light lowercase"
+              className="mt-12 mx-auto w-fit block font-light lowercase"
             >
               con&#116;at&#111;&#64;goon&#46;net&#46;b&#114;
             </a>
