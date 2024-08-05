@@ -63,7 +63,7 @@ export default function Index() {
         <div className="w-full md:w-[740px] px-5 md:mx-auto mt-12 md:mt-20 ">
           <div className="relative  h-0 w-full pb-[56.25%]">
             <iframe
-              src="https://www.youtube.com/embed/HQaMWP77ImQ?si=VdN7a283gyhion3y"
+              src="https://www.youtube.com/embed/Qh8PsZ7dPN4?si=3RxGNc8ns_IE1Yfk"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
